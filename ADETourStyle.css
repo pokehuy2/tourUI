@@ -27,7 +27,7 @@
     min-width: 250px;
 }
 
-.ADETourFilterSection .ADETourFilterTitle {
+.ADETourFilterTitle {
     font-size: 16px;
     font-weight: 700;
     padding-left: 5px;
@@ -35,7 +35,7 @@
     margin: 10px 0;
 }
 
-.ADETourFilterSection .ADETourFilterContentWrap .ADETourFilterContent {
+.ADETourFilterContent {
     display: flex;
     align-items: center;
     gap: 5px;
@@ -43,18 +43,18 @@
     margin: 5px 0;
 }
 
-.ADETourFilterSection .ADETourFilterContentWrap .ADETourFilterContent:hover {
+ .ADETourFilterContent:hover {
     background: rgb(244,246,248);
     border-radius: 5px;
 }
 
-.ADETourFilterSection .ADETourFilterContentWrap input {
+.ADETourFilterContentWrap input {
     width: 16px;
     height: 16px;
     accent-color: #5522bb;
 }
 
-.ADETourFilterSection .ADETourFilterContentWrap label{
+.ADETourFilterContentWrap label{
     display: flex;
     flex-grow: 1;
     justify-content: space-between;
@@ -114,12 +114,12 @@
     object-fit: cover;
 }
 
-.ADETourItem .ADETourItemContent {
+.ADETourItemContent {
     width: 50%;
     padding: 10px;
 }
 
-.ADETourItem .ADETourItemContent .ADETourTopBadge{
+.ADETourTopBadge{
     display: inline-block;
     background-color: rgb(244,246,248);
     border-radius: 13px;
@@ -129,7 +129,7 @@
     font-size: 15px;
 }
 
-.ADETourItem .ADETourItemContent .ADETourItemContentTitle{
+.ADETourItemContentTitle{
     font-size: 16px;
     font-weight: 600;
 }
@@ -141,16 +141,16 @@
     font-size: 12px;
 }
 
-.ADETourItem .ADETourItemContent .ADETourItemContentDetail{
+.ADETourItemContentDetail{
     font-size: 13px;
     margin: 8px 0;
 }
 
-.ADETourItem .ADETourItemContent .ADETourItemContentDetail .ADEBold{
+.ADETourItemContentDetail .ADEBold{
     font-weight: 600;
 }
 
-.ADETourItem .ADETourItemButtonGroup{
+.ADETourItemButtonGroup{
     display: flex;
     flex-direction: column;
     width: 20%;
@@ -167,25 +167,25 @@
     font-size: 16px;
 }
 
-.ADETourItemButtonGroup .ADETourPriceGroup{
+.ADETourPriceGroup{
     text-align: center;
     padding-bottom: 30px;
 }
 
-.ADETourItemButtonGroup .ADETourPriceGroup .ADETourPrice{
+.ADETourPrice{
     font-size: 20px;
     font-weight: 600;
     color: #5522bb;
 }
 
-.ADETourItemButtonGroup .ADETourPriceGroup .ADETourPriceDescription{
+.ADETourPriceDescription{
     color: rgb(79,111,143);
     font-size: 13px;
     margin-bottom: 10px;
 }
 
 .ADETourBookingButton,
-.ADETourItemButtonGroup .ADETourPriceGroup .ADETourSelectButton{
+.ADETourSelectButton{
     background: linear-gradient(101.95deg, #ffa6cd -15.11%, #d15fd1 39.54%, #ad27d5 101.84%);
     color: #ffffff;
     border: none;
@@ -258,8 +258,8 @@
     margin: 15px 0;
 }
 
-.ADETourCustomerBody .ADETourCustomerMainSection,
-.ADETourDetailContent .ADETourDetailMainSection{
+.ADETourCustomerMainSection,
+.ADETourDetailMainSection{
     width: 70%;
 }
 
@@ -275,21 +275,21 @@
     margin-bottom: 10px;
 }
 
-.ADETourDetailGroup .ADETourDetailDays {
+.ADETourDetailDays {
     font-size: 14px;
     font-weight: 600;
     margin-bottom: 10px;
     color: gray;
 }
 
-.ADETourDetailGroup .ADETourDetailsPointDate {
+.ADETourDetailsPointDate {
     display: flex;
     border-radius: 16px;
     background: rgb(244, 246, 248);
     padding: 10px;
 }
 
-.ADETourDetailGroup .ADETourDetailsPointDate .ADETourDes{
+.ADETourDes{
     flex-grow: 1;
     text-align: center;
     font-weight: 600;
@@ -297,7 +297,7 @@
     max-width: 35%;
 }
 
-.ADETourDes .ADETourDesHeader {
+.ADETourDesHeader {
     font-size: 12px;
     color: rgb(79,111,143)
 }
@@ -317,17 +317,17 @@
     border: 1px solid lightgray;
 }
 
-.ADETourRouteGroup .ADETourRouteWrap {
+.ADETourRouteWrap {
     display: flex;
 }
 
-.ADETourRouteGroup .ADETourRouteWrap .ADETourRouteSummary {
+.ADETourRouteSummary {
     width: 10%;
     padding: 10px 0 10px 10px;
     border-right: 1px solid lightgray;
 }
 
-.ADETourRouteGroup .ADETourRouteWrap .ADETourRouteSummary .ADETourDayBox{
+.ADETourDayBox{
     display: inline-block;
     background: #5522bb;
     color: #ffffff;
@@ -336,23 +336,23 @@
     padding: 0 3px;
 }
 
-.ADETourRouteGroup .ADETourRouteWrap .ADETourRouteSummary .ADETourDateInfo {
+.ADETourDateInfo {
     font-weight: 600;
     font-size: 14px;
     color: rgb(79,111,143)
 }
 
-.ADETourRouteGroup .ADETourRouteWrap .ADETourRouteMain {
+.ADETourRouteMain {
     width: 90%;
     padding: 10px 10px 10px 5px;
 }
 
-.ADETourRouteGroup .ADETourRouteWrap .ADETourRouteMain .ADETourRouteTitle{
+.ADETourRouteTitle{
     font-size: 17px;
     font-weight: 600;
 }
 
-.ADETourRouteGroup .ADETourRouteWrap .ADETourRouteMain .ADETourRouteContent {
+.ADETourRouteContent {
     font-size: 12px;
 }
 
@@ -362,7 +362,7 @@
     padding: 10px;
 }
 
-.ADETourNoteWrap .ADETourNoteTitle{
+.ADETourNoteTitle{
     display: flex;
     align-items: center;
     font-weight: 600;
@@ -372,8 +372,8 @@
     margin: 5px 0;
 }
 
-.ADETourCustomerBody .ADETourCustomerAsideSection,
-.ADETourDetailContent .ADETourDetailAsideSection{
+.ADETourCustomerAsideSection,
+.ADETourDetailAsideSection{
     width: 30%;
 }
 
@@ -400,36 +400,34 @@
     font-weight: 600;
 }
 
-.ADETourAsideContentItem .ADETourChangeNumberBtn {
+.ADETourChangeNumberBtn {
     width: 25px;
     height: 25px;
     border-radius: 50%;
     color: #5522bb;
     background: #ffffff;
     border: 2px solid #5522bb;
-    /* border: none; */
     cursor: pointer;
     font-size: 18px;
     font-weight: 600;
     padding: 0;
 }
 
-.ADETourAsideContentItem .ADETourChangeNumberBtn:hover{
+.ADETourChangeNumberBtn:hover{
    color: #ffffff;
    background: #5522bb;
 }
 
-.ADETourAsideContentItem .ADETourNumberInput {
+.ADETourNumberInput {
     height: 25px;
     width: 35px;
     border-radius: 6px;
-    /* border: 1px solid #5522bb; */
     border: none;
     text-align: center;
     font-size: 18px;;
 }
 
-.ADETourAsideContentItem .ADETourNumberInput:hover {
+.ADETourNumberInput:hover {
     border: 2px solid #5522bb;
 }
 
