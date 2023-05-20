@@ -5,16 +5,22 @@
 
 /* TOUR POOL PAGE */
 
-.ADETourPoolBody{
-    display: flex;
-    gap: 40px;
+.ADETourPoolBody,
+.ADETourDetailBody,
+.ADETourCustomerBody {
     max-width: 1140px;
     margin: auto;
 }
 
+.ADETourPoolBody,
+.ADETourCustomerBody
+{
+    display: flex;
+    gap: 40px;
+}
+
 /* -------------filter section------------- */
 .ADETourFilterSection{
-    /* border: 1px solid lightgray; */
     border-radius: 5px;
     height: 500px;
     width: 20%;
@@ -187,10 +193,6 @@
 }
 
 /* TOUR DETAIL PAGE */
-.ADETourDetailBody {
-    max-width: 1140px;
-    margin: auto;
-}
 
 .ADETourDetailCarousel {
     margin: 20px 0;
@@ -221,14 +223,6 @@
     font-size: 16px;
 }
 
-.ADETourEditButton {
-    border: none;
-    background: #ffffff;
-    color: #5522bb;
-    margin-top : 10px;
-    cursor: pointer;
-}
-
 /* slick modify */
 .slick-prev::before,
 .slick-next::before {
@@ -256,23 +250,26 @@
 }
 
 /* tour detail content section */
-.ADETourDetailContent{
+
+.ADETourDetailContent
+{
     display: flex;
     gap: 30px;
     margin: 15px 0;
 }
 
+.ADETourCustomerBody .ADETourCustomerMainSection,
 .ADETourDetailContent .ADETourDetailMainSection{
     width: 70%;
 }
 
-.ADETourDetailContent .ADETourDetailMainSection .ADETourDetailGroup {
+.ADETourDetailGroup {
     border-radius: 15px;
     border: 1px solid lightgray;
     padding: 15px;
 }
 
-.ADETourDetailGroup .ADETourDetailName {
+.ADETourDetailName {
     font-size: 20px;
     font-weight: 700;
     margin-bottom: 10px;
@@ -375,8 +372,8 @@
     margin: 5px 0;
 }
 
+.ADETourCustomerBody .ADETourCustomerAsideSection,
 .ADETourDetailContent .ADETourDetailAsideSection{
-    border-radius: 15px;
     width: 30%;
 }
 
@@ -553,5 +550,4 @@
     height: 8px;
     margin-right: 5px;
     background: url('data:image/svg+xml,<svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.1212 0.372418C12.8812 0.133886 12.5567 0 12.2183 0C11.88 0 11.5554 0.133886 11.3155 0.372418L6.71798 4.90609L2.18451 0.372418C1.94457 0.133886 1.61999 0 1.28166 0C0.943336 0 0.618755 0.133886 0.378811 0.372418C0.258779 0.491475 0.163506 0.633122 0.0984898 0.789187C0.0334734 0.945252 0 1.11265 0 1.28171C0 1.45078 0.0334734 1.61818 0.0984898 1.77424C0.163506 1.93031 0.258779 2.07195 0.378811 2.19101L5.80873 7.62117C5.92778 7.74121 6.06942 7.83649 6.22548 7.90151C6.38154 7.96652 6.54892 8 6.71798 8C6.88704 8 7.05443 7.96652 7.21049 7.90151C7.36655 7.83649 7.50819 7.74121 7.62724 7.62117L13.1212 2.19101C13.2412 2.07195 13.3365 1.93031 13.4015 1.77424C13.4665 1.61818 13.5 1.45078 13.5 1.28171C13.5 1.11265 13.4665 0.945252 13.4015 0.789187C13.3365 0.633122 13.2412 0.491475 13.1212 0.372418Z" fill="%235522BB"/></svg>') no-repeat center;
-
 }
