@@ -7,6 +7,9 @@
     <title>Document</title>
     <link rel="stylesheet" href="ADETourStyle.css">
     <link rel="stylesheet" href="ADEStyle.css">
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="slick.min.js"></script>
+    <script type="text/javascript" src="TourProgram.js"></script>
 </head>
 <body>
     <div class="ADETourCustomerBody">
@@ -53,11 +56,73 @@
                         <label for="invoice">Tôi muốn xuất hóa đơn</label>
                     </div>
                 </div>
-                
+                <div class="ADETourBillingInfo">
+                    <div class="ADEControlBox">
+                        <input type="text" class="ADEControl ADEBorder15" name="tel" placeholder=" ">
+                        <label for="tel">Tên công ty</label>
+                    </div>
+                    <div class="ADEControlBox">
+                        <input type="text" class="ADEControl ADEBorder15" name="tel" placeholder=" ">
+                        <label for="tel">Địa chỉ</label>
+                    </div>
+                    <div class="ADEControlBox">
+                        <input type="text" class="ADEControl ADEBorder15" name="tel" placeholder=" ">
+                        <label for="tel">Thành phố</label>
+                    </div>
+                    <div class="ADEControlBox">
+                        <input type="text" class="ADEControl ADEBorder15" name="tel" placeholder=" ">
+                        <label for="tel">Mã số thuế</label>
+                    </div>
+                    <div class="ADEControlBox">
+                        <input type="text" class="ADEControl ADEBorder15" name="tel" placeholder=" ">
+                        <label for="tel">Người nhận hóa đơn</label>
+                    </div>
+                    <div class="ADEControlBox">
+                        <input type="text" class="ADEControl ADEBorder15" name="tel" placeholder=" ">
+                        <label for="tel">Email</label>
+                    </div>
+                    <div class="ADEControlBox">
+                        <input type="text" class="ADEControl ADEBorder15" name="tel" placeholder=" ">
+                        <label for="tel">Số điện thoại</label>
+                    </div>
+                </div>
             </div>
             <div class="ADETourCard ADETourDetailGroup">
                 <div class="ADETourDetailName">Phương thức thanh toán</div>
-                <div></div>
+                <div>
+                    <div class="ADETourPaymentOption">
+                        <div class="ADETourPaymentTitle">
+                            <input type="radio" id="banktransfer">
+                            <div>
+                                <label for="banktransfer">Chuyển khoản</label>
+                                <div class="ADETourPaymentDescription">Chuyển khoản tới tài khoản ngân hàng của đại lý, bạn cần tài khoản ngân
+                                    hàng và online banking</div>
+                            </div>
+                        </div>
+                        <div class="ADETourPaymentContent">
+                            <div>Ngân hàng: <b>TMCP Ngoại thương Việt Nam Vietcombank</b></div>
+                            <div>Số tài khoản: <b>9823904899234</b></div>
+                            <div>Chủ tài khoản: <b>Đại lý vé máy bay Metatrip</b></div>
+                            <div>Nội dung chuyển khoản: <b>[Tên_quý_khách]_[Số_điện_thoại]</b></div>
+                        </div>
+                    </div>
+                    <div class="ADETourPaymentOption">
+                        <div class="ADETourPaymentTitle">
+                            <input type="radio" id="paycash">
+                            <div>
+                                <label for="paycash">Thanh toán tiền mặt</label>
+                                <div class="ADETourPaymentDescription">
+                                    Thanh toán bằng tiền mặt trực tiếp tại đại lý
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ADETourPaymentContent">
+                            <div>Đại lý vé máy bay: <b>Việt An</b></div>
+                            <div>Địa chỉ: <b>123 Cầu Giấy</b></div>
+                            <div>Mã số thuế <b>0123456789</b></div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="ADETourCard ADETourDetailGroup">
                 <button class="ADETourBookingButton">Thanh toán tour</button>

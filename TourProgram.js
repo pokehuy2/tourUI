@@ -10,8 +10,10 @@ $(document).ready(function () {
   $(".ADETourExpandRoute").click(() => {
     if ($(".ADETourRouteContent").css("display") === "none") {
       $(".ADETourRouteContent").css("display", "block");
+      $(".ADETourDateInfo").css("display", "block");
     } else {
       $(".ADETourRouteContent").css("display", "none");
+      $(".ADETourDateInfo").css("display", "none");
     }
   });
 
@@ -22,5 +24,28 @@ $(document).ready(function () {
     } else {
       content.css("display", "none");
     }
+  });
+
+  $("#invoice").attr("checked", "true");
+
+  $("#invoice").change(function () {
+    if ($("#invoice").is(":checked") === true) {
+      console.log("chekced");
+      $(".ADETourBillingInfo").css("display", "flex");
+    } else {
+      console.log("not chekced");
+      $(".ADETourBillingInfo").css("display", "none");
+    }
+  });
+
+  $(".ADETourPaymentContent").css("display", "none");
+
+  $(".ADETourPaymentTitle input").change(function () {
+    $(".ADETourPaymentContent").css("display", "none");
+    $(".ADETourPaymentTitle input").not($(this)).prop("checked", false);
+    $(this)
+      .closest(".ADETourPaymentOption")
+      .children(".ADETourPaymentContent")
+      .css("display", "block");
   });
 });

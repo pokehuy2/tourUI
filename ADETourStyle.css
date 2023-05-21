@@ -3,6 +3,15 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* default not show */
+
+/* .ADETourPaymentContent, 
+.ADETourNoteContent,
+.ADETourRouteContent,
+.ADETourDateInfo {
+    display: none;
+} */
+
 /* TOUR POOL PAGE */
 
 .ADETourPoolBody,
@@ -283,6 +292,7 @@
     color: gray;
 }
 
+.ADETourBillingInfo,
 .ADETourDetailsPointDate {
     display: flex;
     border-radius: 16px;
@@ -439,7 +449,7 @@
     border-radius: 6px;
     border: none;
     text-align: center;
-    font-size: 18px;;
+    font-size: 18px;
 }
 
 .ADETourNumberInput:hover {
@@ -466,6 +476,54 @@
 .ADECustomerImageWrap img {
     width: 100%;
     border-radius: 15px;
+}
+
+/* CUSTOMER INFO PAGE */
+
+.ADETourBillingInfo{
+    padding: 15px 50px;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.ADETourPaymentOption{
+    padding: 10px;
+    border-radius: 15px; 
+    border: 1px solid lightgray;
+    margin-top: 10px;
+}
+
+.ADETourPaymentTitle {
+    display: flex;
+    align-items: center;
+}
+
+.ADETourPaymentTitle input {
+    width: 16px;
+    height: 16px;
+    accent-color: #5522bb;
+    margin: 0 20px 0 10px;
+}
+
+.ADETourPaymentTitle label {
+    font-weight: 600;
+    line-height: 23px;
+}
+
+.ADETourPaymentDescription {
+    font-size: 13px;
+    color: #4f6f8f;
+}
+
+.ADETourPaymentContent {
+    padding: 10px 0 10px 50px;
+    background: #f4f6f8;
+    border-radius: 15px;
+    margin-top: 15px;
+}
+
+.ADETourPaymentContent > div {
+    margin: 5px 0;
 }
 
 /* icon and line, extend */
