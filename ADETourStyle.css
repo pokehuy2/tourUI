@@ -21,8 +21,6 @@
 
 /* -------------filter section------------- */
 .ADETourFilterSection{
-    border-radius: 5px;
-    height: 500px;
     width: 20%;
     min-width: 250px;
 }
@@ -223,6 +221,9 @@
     font-size: 16px;
 }
 
+.ADETourHint {
+    margin-bottom: 10px;
+}
 /* slick modify */
 .slick-prev::before,
 .slick-next::before {
@@ -309,8 +310,6 @@
     flex-wrap: wrap;
 }
 
-
-/* fixxxxxxxxxxxxx */
 .ADETourRouteGroup{
     border-radius: 16px;
     margin-top: 10px;
@@ -356,8 +355,6 @@
     font-size: 12px;
 }
 
-/* fixxxxxxxxxxxxxxxxxx */
-
 .ADETourNoteWrap {
     padding: 10px;
 }
@@ -366,6 +363,7 @@
     display: flex;
     align-items: center;
     font-weight: 600;
+    cursor: pointer;
 }
 
 .ADETourNoteWrap .ADELineGray{
@@ -400,22 +398,39 @@
     font-weight: 600;
 }
 
+.ADETourChangeNumberBtn,
+.ADETourBackButton,
+.ADETourExpandRoute {
+    border: 2px solid #5522bb;
+    color: #5522bb;
+    background: #ffffff;
+    cursor: pointer;
+    font-weight: 600;
+}
+
 .ADETourChangeNumberBtn {
     width: 25px;
     height: 25px;
     border-radius: 50%;
-    color: #5522bb;
-    background: #ffffff;
-    border: 2px solid #5522bb;
-    cursor: pointer;
     font-size: 18px;
-    font-weight: 600;
     padding: 0;
 }
 
-.ADETourChangeNumberBtn:hover{
-   color: #ffffff;
-   background: #5522bb;
+.ADETourBackButton,
+.ADETourExpandRoute {
+    height: 30px;
+    border-radius: 15px;
+}
+
+.ADETourBackButton:hover,
+.ADETourExpandRoute:hover,
+.ADETourChangeNumberBtn:hover {
+    color: #ffffff;
+    background: #5522bb;
+}
+
+.ADETourBackButton:hover .ADETourArrowLeftIcon {
+    background: url('data:image/svg+xml,<svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.16632 4.16664H2.83869L5.58983 1.42723C5.74682 1.27044 5.83501 1.05779 5.83501 0.836054C5.83501 0.614319 5.74682 0.401665 5.58983 0.244875C5.43285 0.0880841 5.21993 0 4.99792 0C4.77591 0 4.56299 0.0880841 4.40601 0.244875L0.23761 4.40811C0.161711 4.4873 0.102216 4.58068 0.0625372 4.68288C-0.0208458 4.8856 -0.0208458 5.11298 0.0625372 5.3157C0.102216 5.4179 0.161711 5.51128 0.23761 5.59047L4.40601 9.7537C4.48351 9.83175 4.57572 9.89369 4.67731 9.93596C4.7789 9.97824 4.88787 10 4.99792 10C5.10798 10 5.21694 9.97824 5.31854 9.93596C5.42013 9.89369 5.51233 9.83175 5.58983 9.7537C5.66797 9.6763 5.72999 9.58421 5.77232 9.48274C5.81464 9.38128 5.83644 9.27244 5.83644 9.16253C5.83644 9.05261 5.81464 8.94377 5.77232 8.84231C5.72999 8.74084 5.66797 8.64875 5.58983 8.57135L2.83869 5.83194H9.16632C9.38743 5.83194 9.59948 5.74421 9.75582 5.58806C9.91217 5.43191 10 5.22012 10 4.99929C10 4.77846 9.91217 4.56667 9.75582 4.41052C9.59948 4.25437 9.38743 4.16664 9.16632 4.16664Z" fill="white"/></svg>') no-repeat center;
 }
 
 .ADETourNumberInput {
@@ -444,26 +459,38 @@
     color: #5522bb
 }
 
+.ADECustomerImageWrap {
+    width: 40%;
+}
+
+.ADECustomerImageWrap img {
+    width: 100%;
+    border-radius: 15px;
+}
+
 /* icon and line, extend */
+.ADEF20MT10,
+.ADEFlex20 {
+    display: flex;
+    gap: 20px;
+}
+
+.ADEF20MT10 {
+    margin-top: 10px;
+}
+
+.ADEW50{
+    width: 50%;
+}
+
+.ADEBorder15{
+    border-radius: 15px;
+    border: 1px solid lightgray;
+}
 
 .ADETourTitleAndButtonGroup {
     display: flex;
     justify-content: space-between;
-}
-
-.ADETourExpandRoute {
-    height: 30px;
-    border: 2px solid #5522bb;
-    border-radius: 15px;
-    color: #5522bb;
-    background: #ffffff;
-    cursor: pointer;
-    font-weight: 600;
-}
-
-.ADETourExpandRoute:hover {
-    color: #ffffff;
-    background: #5522bb;
 }
 
 .ADELine{
@@ -548,4 +575,13 @@
     height: 8px;
     margin-right: 5px;
     background: url('data:image/svg+xml,<svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.1212 0.372418C12.8812 0.133886 12.5567 0 12.2183 0C11.88 0 11.5554 0.133886 11.3155 0.372418L6.71798 4.90609L2.18451 0.372418C1.94457 0.133886 1.61999 0 1.28166 0C0.943336 0 0.618755 0.133886 0.378811 0.372418C0.258779 0.491475 0.163506 0.633122 0.0984898 0.789187C0.0334734 0.945252 0 1.11265 0 1.28171C0 1.45078 0.0334734 1.61818 0.0984898 1.77424C0.163506 1.93031 0.258779 2.07195 0.378811 2.19101L5.80873 7.62117C5.92778 7.74121 6.06942 7.83649 6.22548 7.90151C6.38154 7.96652 6.54892 8 6.71798 8C6.88704 8 7.05443 7.96652 7.21049 7.90151C7.36655 7.83649 7.50819 7.74121 7.62724 7.62117L13.1212 2.19101C13.2412 2.07195 13.3365 1.93031 13.4015 1.77424C13.4665 1.61818 13.5 1.45078 13.5 1.28171C13.5 1.11265 13.4665 0.945252 13.4015 0.789187C13.3365 0.633122 13.2412 0.491475 13.1212 0.372418Z" fill="%235522BB"/></svg>') no-repeat center;
+}
+
+.ADETourArrowLeftIcon{
+    display: inline-block;
+    position: relative;
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
+    background: url('data:image/svg+xml,<svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.16632 4.16664H2.83869L5.58983 1.42723C5.74682 1.27044 5.83501 1.05779 5.83501 0.836054C5.83501 0.614319 5.74682 0.401665 5.58983 0.244875C5.43285 0.0880841 5.21993 0 4.99792 0C4.77591 0 4.56299 0.0880841 4.40601 0.244875L0.23761 4.40811C0.161711 4.4873 0.102216 4.58068 0.0625372 4.68288C-0.0208458 4.8856 -0.0208458 5.11298 0.0625372 5.3157C0.102216 5.4179 0.161711 5.51128 0.23761 5.59047L4.40601 9.7537C4.48351 9.83175 4.57572 9.89369 4.67731 9.93596C4.7789 9.97824 4.88787 10 4.99792 10C5.10798 10 5.21694 9.97824 5.31854 9.93596C5.42013 9.89369 5.51233 9.83175 5.58983 9.7537C5.66797 9.6763 5.72999 9.58421 5.77232 9.48274C5.81464 9.38128 5.83644 9.27244 5.83644 9.16253C5.83644 9.05261 5.81464 8.94377 5.77232 8.84231C5.72999 8.74084 5.66797 8.64875 5.58983 8.57135L2.83869 5.83194H9.16632C9.38743 5.83194 9.59948 5.74421 9.75582 5.58806C9.91217 5.43191 10 5.22012 10 4.99929C10 4.77846 9.91217 4.56667 9.75582 4.41052C9.59948 4.25437 9.38743 4.16664 9.16632 4.16664Z" fill="%235522BB"/></svg>') no-repeat center;
 }
